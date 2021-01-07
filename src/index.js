@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
- 
+import Session from './view/Session.view';
+
+import './assets/style/css/main.css'
+
+const root = document.getElementById('__root'); 
+
 ReactDOM.render(
-<App />, 
-document.getElementById('__root'));
+    <React.StrictMode>
+        <Session />
+    </React.StrictMode>, 
+root);

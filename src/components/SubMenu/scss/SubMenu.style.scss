@@ -1,0 +1,16 @@
+.lo-box_ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+    &:last-child {
+        margin-left: 1rem;
+    }
+}
+.lo-btn__OFF {
+    transform: scale(.8);
+    opacity: 0.5;
+    transition: .3s;
+    pointer-events: all;
+}

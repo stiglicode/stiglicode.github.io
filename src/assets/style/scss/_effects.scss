@@ -1,0 +1,14 @@
+.click-up {
+    transition-duration: .3s;
+    &:active {
+        transition-property: transform;
+        transform: scale(.85);
+        opacity: 1 !important;
+    }
+}
+.click-opac {
+    transition: .3s;
+    &:hover {
+        opacity: .8;
+    }
+}

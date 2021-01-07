@@ -1,0 +1,340 @@
+@charset "UTF-8";
+:root {
+  --mc1:  #21bdb8;
+  --mc2:  #280684;
+  --wh-opacity: rgba(255,255,255, .3);
+  --bsp: 30px;
+  --btn-padd: .8rem;
+  --logo-font-size: 4rem;
+  --logo-text-1: var(--rem-4-light);
+  --logo-text-2: var(--rem-4-regular);
+  --logo-text-3: var(--rem-4-light);
+  --rem-1-light: 300;
+  --rem-1-regular: 500;
+  --rem-1-bold: 700;
+  --rem-2-light: 200;
+  --rem-2-regular: 300;
+  --rem-2-bold: 600;
+  --rem-3-light: 200;
+  --rem-3-regular: 300;
+  --rem-3-bold: 600;
+  --rem-4-light: 100;
+  --rem-4-regular: 300;
+  --rem-4-bold: 600;
+}
+
+/* Normalize style document */
+/* This document edit pre-defined CSS style*/
+/* © Milan Štiglic*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.column,
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bs-padd {
+  padding: 30px;
+}
+
+.bs-padd-r {
+  padding-right: 30px;
+}
+
+.bs-padd-l {
+  padding-left: 30px;
+}
+
+.bs-padd-t {
+  padding-top: 30px;
+}
+
+.bs-padd-b {
+  padding-bottom: 30px;
+}
+
+.bs-padd-sd {
+  padding: 0 30px 0 30px;
+}
+
+.justify-right,
+.justify-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.justify-left,
+.justify-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-evenly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.justify-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-stretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.align-bottom,
+.align-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.align-top,
+.align-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-stretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.l {
+  font-weight: 300;
+}
+
+.r {
+  font-weight: 500;
+}
+
+.ita {
+  font-style: italic;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #__root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bckg-gradient {
+  background-image: radial-gradient(at bottom right, #21bdb8, #280684);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--wh-opacity);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.btn-ui {
+  padding: 0.1rem var(--btn-padd);
+  border-radius: 100rem;
+  background-color: var(--wh-opacity);
+}
+
+.ico-hue {
+  fill: #ffff;
+}
+
+.ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rotate-90__ico {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.rotate-180__ico {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.rotate-270__ico {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.rotate-90__ico, .rotate-270__ico, .rotate-180__ico {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.click-up {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.click-up:active {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  opacity: 1 !important;
+}
+
+.click-opac {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.click-opac:hover {
+  opacity: .8;
+}

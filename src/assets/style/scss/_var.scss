@@ -1,0 +1,36 @@
+$main-color-1:  #21bdb8;
+$main-color-2:  #280684;
+$bs-padd: 30px;
+
+:root {
+    --mc1:  #21bdb8;
+    --mc2:  #280684;
+    --wh-opacity: rgba(255,255,255, .3);
+    --bsp: 30px;
+    --btn-padd: .8rem;
+    // logo
+    --logo-font-size: 4rem;
+    --logo-text-1: var(--rem-4-light);
+    --logo-text-2: var(--rem-4-regular);
+    --logo-text-3: var(--rem-4-light);
+    // font size
+    --rem-1-light: 300;
+    --rem-1-regular: 500;
+    --rem-1-bold: 700;
+    // 
+    --rem-2-light: 200;
+    --rem-2-regular: 300;
+    --rem-2-bold: 600;
+    // 
+    --rem-3-light: 200;
+    --rem-3-regular: 300;
+    --rem-3-bold: 600;
+    // 
+    --rem-4-light: 100;
+    --rem-4-regular: 300;
+    --rem-4-bold: 600;
+}
+// 1 rem
+// Light => 300
+// Regular => 500
+// Bold => 700

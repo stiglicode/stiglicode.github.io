@@ -1,0 +1,20 @@
+.ico-hue {
+    fill: #ffff;
+}
+.ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotate-90__ico {
+    transform: rotate(90deg);
+}
+.rotate-180__ico {
+    transform: rotate(180deg);
+}
+.rotate-270__ico {
+    transform: rotate(270deg);
+}
+.rotate-90__ico, .rotate-270__ico, .rotate-180__ico {
+    transition: .3s;
+}

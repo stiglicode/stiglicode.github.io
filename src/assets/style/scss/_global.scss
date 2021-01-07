@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    display: flex;
+    #__root {
+        display: flex;
+        width: 100%;
+        height: inherit;
+        user-select: none;
+    }
+}
+.bckg-gradient {
+    background-image: radial-gradient(at bottom right, $main-color-1,$main-color-2)
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--wh-opacity);
+    flex-grow: 1;
+}
+.btn-ui{
+    padding: .1rem var(--btn-padd);
+    border-radius: 100rem;
+    background-color: var(--wh-opacity);
+}
