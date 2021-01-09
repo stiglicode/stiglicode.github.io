@@ -47,7 +47,7 @@ const SayHeyMachine = () => {
     }else if(h > 8 && h <= 11 || h > 13 && h <= 17){
         return "Have a nice day!"
     }else if(h >= 12 && h <= 13){
-        return "Bon Appétit! ( if you eating )"
+        return "Bon Appétit! ( if you eat )"
     }else if(h > 17 && h <= 22){
         return "Good evening"
     }else if(h > 22 && h <= 23 || h === 1 || h === 0){

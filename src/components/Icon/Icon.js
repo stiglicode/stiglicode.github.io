@@ -4,26 +4,26 @@ import "./css/icons.style-classes.css";
 const Icon = (props) => {
     if(props.type === "heart"){
         return (
-                <Heart propositions={props.size} ui={props.ui}/>
+                <Heart propositions={props.size} ui={props.ui} animation-ui={props["animation-class"]}/>
         )
     }
     else if(props.type === "filter"){
         return (
-                <Filter propositions={props.size} ui={props.ui}/>
+                <Filter propositions={props.size} ui={props.ui} animation-ui={props["animation-class"]} />
         )
     }
     else if(props.type === "grid-row"){
         return (
-                <GridRow propositions={props.size} ui={props.ui}/>
+                <GridRow propositions={props.size} ui={props.ui} animation-ui={props["animation-class"]} />
         )
     }
     else if(props.type === "grid"){
         return (
-                <Grid propositions={props.size} ui={props.ui}/>
+                <Grid propositions={props.size} ui={props.ui} animation-ui={props["animation-class"]} />
         )
     }else if(props.type === "arrow"){
         return (
-                <Arrow propositions={props.size} ui={props.ui}/>
+                <Arrow propositions={props.size} ui={props.ui} animation-ui={props["animation-class"]} />
         )
     }
 };
@@ -35,6 +35,7 @@ const Heart = (props) => {
         height={props.propositions.h} 
         width={props.propositions.w}
         viewBox="0 0 24 24" 
+        className={props["animation-ui"]}
         >
         <path d="M0 0h24v24H0V0z" 
         fill="none"/>
@@ -49,10 +50,11 @@ const Filter = (props) => {
     return (
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            enable-background="new 0 0 24 24" 
+            enableBackground="new 0 0 24 24" 
             height={props.propositions.h} 
             width={props.propositions.w}
             viewBox="0 0 24 24" 
+            className={props["animation-ui"]}
             >
             <g>
                 <path 
@@ -78,6 +80,7 @@ const Grid = (props) => {
         viewBox="0 0 24 24" 
         height={props.propositions.h} 
         width={props.propositions.w}
+        className={props["animation-ui"]}
         >
             <path 
                 d="M0 0h24v24H0z" 
@@ -94,10 +97,11 @@ const GridRow = (props) => {
     return (
         <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        enable-background="new 0 0 24 24" 
+        enableBackground="new 0 0 24 24" 
         viewBox="0 0 24 24" 
         height={props.propositions.h} 
         width={props.propositions.w}
+        className={props["animation-ui"]}
         >
         <g>
             <rect 
@@ -127,6 +131,7 @@ const Arrow = (props) => {
             xmlns="http://www.w3.org/2000/svg" 
             height={props.propositions.h} 
             width={props.propositions.w}
+            className={props["animation-ui"]}
             viewBox="0 0 24 24"
             >
                 <path 

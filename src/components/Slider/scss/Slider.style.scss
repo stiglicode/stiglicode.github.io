@@ -1,0 +1,116 @@
+.slr-cont{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    padding: calc(var(--bsp) / 1.5);
+    .slr-btns{
+        position: absolute;
+        z-index: 1;
+        opacity: .1;
+        transition: .3s;
+        cursor: pointer;
+        width: fit-content;
+        height: 440px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        z-index: 2;
+        &:hover {
+            opacity: 1;
+            transition: linear .3s;
+
+        }
+        &:nth-child(1){
+            left: 20px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 100%);
+            &:hover {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+        &:nth-child(2){
+            right: 20px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 100%);
+            .arr-ico {
+                transform-origin: center;
+                transform: rotate(180deg);
+            }
+            &:hover {
+                background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+    }
+    .slr{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .slr-overflow{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+            position: absolute;
+            transition: .8s;
+            transition-timing-function: ease-in-out;
+            left: 0;
+            .slr-cnt-bx {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: calc(100vw - 100px);
+            }
+        }
+    }
+    .slr-page{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .slr-page-box{
+            width: fit-content;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .slr-page-signature{
+                display: block;
+                border-radius: 100%;
+                transition: .3s;
+                margin: 0 8px 0 8px;
+                background-color: var(--wh-opacity);
+                width: 15px;
+                height: 15px;
+                font-size: 0;
+                &:hover{
+                    background-color: rgba(255,255,255, 0.5);
+                }
+                &-ON {
+                    background-color: rgb(255,255,255);
+                    width: 25px;
+                    height: 25px;
+                    &:hover{
+                        background-color: rgb(255,255,255);
+                    }
+                }
+                &:nth-child(1){
+                    margin-left: 0;
+                }
+                &:nth-last-child(1){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
