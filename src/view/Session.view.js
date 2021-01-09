@@ -54,6 +54,74 @@ const LayoutSlider = () => {
                     <WPTEst>4.1.2021</WPTEst>
                 </WorkPostTemplate>
             </SliderContentBox>
+            <SliderContentBox>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+            </SliderContentBox>
+            <SliderContentBox>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+            </SliderContentBox>
+            <SliderContentBox>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+            </SliderContentBox>
+            <SliderContentBox>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+                <WorkPostTemplate>
+                    <WPTImage image-src="./img/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
+                    <WPTTitle>Ja som title</WPTTitle>
+                    <WPTEst>4.1.2021</WPTEst>
+                </WorkPostTemplate>
+            </SliderContentBox>
         </SliderParent>
     )
 }
