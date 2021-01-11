@@ -18,8 +18,8 @@
         ]
     },
     "scripts": {
-        "serve": "live-server dist",
-        "github-test": "live-server",
+        "test-development": "live-server dist",
+        "test-production": "live-server",
         "build": "webpack --config webpack.config.js",
         "dev-server": "webpack serve"
     },
