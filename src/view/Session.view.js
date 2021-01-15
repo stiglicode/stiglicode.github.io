@@ -1,129 +1,31 @@
-import React from 'react';
+import React, { useEffect } from "react";
 
 import Nav from "../components/Nav/Nav";
 import SubMenu from "../components/SubMenu/SubMenu";
-import {WorkPostTemplate, WPTImage, WPTTitle, WPTEst} from "../components/WorkPost/WorkPost";
-import { SliderContentBox,SliderParent } from '../components/Slider/index';
+import { WorkPostTemplate, WPTContentText } from "../components/WorkPost/WorkPost";
+import { SliderContentBox, SliderParent } from "../components/Slider/index";
+import exampleDataFromDB from "../fake.db";
 
-const Session = () => {
-    return(
-        <div className="w-100 bckg-gradient column">
-            <Nav />
-            <SubMenu />
-            <div className="root-cont column">
-                <LayoutSlider />
-            </div>
-        </div>
-    )
-}
-
-const LayoutSlider = () => {
-    return (
+function Session() {
+  return (
+    <div className="w-100 bckg-gradient column">
+      <Nav />
+      <SubMenu />
+      <div className="root-cont column">
+        {/* {console.log(exampleDataFromDB[0])} */}
         <SliderParent>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
-            <SliderContentBox>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-                <WorkPostTemplate>
-                    <WPTImage image-src="./static/media/beautiful-combination-of-brown-wheat-field-and-blue-sky-wallpaper.jpg"/>
-                    <WPTTitle>Ja som title</WPTTitle>
-                    <WPTEst>4.1.2021</WPTEst>
-                </WorkPostTemplate>
-            </SliderContentBox>
+          {exampleDataFromDB.map((ele, k) => {
+            const { usedLangs, title, est, img, contentText } = ele;
+            return (
+              <WorkPostTemplate langs={usedLangs} image-src={img} est={est} title={title} key={k}>
+                <WPTContentText>{contentText}</WPTContentText>
+              </WorkPostTemplate>
+            );
+          })}
         </SliderParent>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default Session;

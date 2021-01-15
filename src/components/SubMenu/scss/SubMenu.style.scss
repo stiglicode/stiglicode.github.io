@@ -1,16 +1,27 @@
 .lo-box_ico {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    pointer-events: none;
-    &:last-child {
-        margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  position: relative;
+  color: #fff;
+  &:first-child {
+    margin-left: 1rem;
+    &::after {
+      content: "Grid Layout";
     }
+  }
+  &:last-child {
+    margin-left: 1rem;
+    &::after {
+      content: "Row Slider";
+    }
+  }
 }
 .lo-btn__OFF {
-    transform: scale(.8);
-    opacity: 0.5;
-    transition: .3s;
-    pointer-events: all;
+  transform: scale(0.8);
+  opacity: 0.5;
+  transition: 0.3s;
+  pointer-events: all;
 }

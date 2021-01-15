@@ -264,7 +264,7 @@ body #__root {
   background-image: radial-gradient(at bottom right, #21bdb8, #280684);
 }
 
-hr {
+.hr-g {
   border: none;
   height: 2px;
   background-color: var(--wh-opacity);
@@ -273,10 +273,33 @@ hr {
           flex-grow: 1;
 }
 
+.hr-w {
+  border: none;
+  height: 2px;
+  background-color: var(--wh-opacity);
+  width: 100%;
+}
+
 .btn-ui {
   padding: 0.1rem var(--btn-padd);
   border-radius: 100rem;
   background-color: var(--wh-opacity);
+}
+
+hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  unicode-bidi: unset;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  overflow: unset;
 }
 
 .root-cont {
@@ -295,6 +318,63 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
+}
+
+.tool-tip::after {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--wh-opacity);
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.tool-tip:hover::after {
+  top: 40px;
+  opacity: 1 !important;
+  pointer-events: all;
+}
+
+.t-t-delay::after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.t-t-delay:hover::after {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-transform-origin: 0.3s;
+          transform-origin: 0.3s;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .ico-hue {
@@ -328,9 +408,183 @@ hr {
           transform: rotate(270deg);
 }
 
-.rotate-90__ico, .rotate-270__ico, .rotate-180__ico {
-  -webkit-transition: .3s;
-  transition: .3s;
+.rotate-90__ico,
+.rotate-270__ico,
+.rotate-180__ico {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hue-ico {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hue-ico:first-child {
+  margin-left: 0;
+}
+
+.hue-ico:last-child {
+  margin-right: 0;
+}
+
+.i__ai {
+  background-image: url("../../icons/langs-pic/icons8_adobe_illustrator_90px.png");
+}
+
+.i__ai::after {
+  content: "Illustrator";
+}
+
+.i__ps {
+  background-image: url("../../icons/langs-pic/icons8_adobe_photoshop_90px.png");
+}
+
+.i__ps::after {
+  content: "PhotoShop";
+}
+
+.i__xd {
+  background-image: url("../../icons/langs-pic/icons8_adobe_xd_90px.png");
+}
+
+.i__xd::after {
+  content: "Experience Design";
+}
+
+.i__id {
+  background-image: url("../../icons/langs-pic/icons8_adobe_indesign_90px.png");
+}
+
+.i__id::after {
+  content: "InDesigne";
+}
+
+.i__angular {
+  background-image: url("../../icons/langs-pic/icons8_angularjs_90px.png");
+}
+
+.i__angular::after {
+  content: "Angular";
+}
+
+.i__bootstrap {
+  background-image: url("../../icons/langs-pic/icons8_bootstrap_90px.png");
+}
+
+.i__bootstrap::after {
+  content: "BootsTrap";
+}
+
+.i__css {
+  background-image: url("../../icons/langs-pic/icons8_css3_90px.png");
+}
+
+.i__css::after {
+  content: "CSS";
+}
+
+.i__html {
+  background-image: url("../../icons/langs-pic/icons8_html_5_90px.png");
+}
+
+.i__html::after {
+  content: "HTML";
+}
+
+.i__js {
+  background-image: url("../../icons/langs-pic/icons8_javascript_90px.png");
+}
+
+.i__js::after {
+  content: "JavaScript";
+}
+
+.i__nj {
+  background-image: url("../../icons/langs-pic/icons8_nodejs_90px_1.png");
+}
+
+.i__nj::after {
+  content: "Node JS";
+}
+
+.i__py {
+  background-image: url("../../icons/langs-pic/icons8_python_90px.png");
+}
+
+.i__py::after {
+  content: "Python";
+}
+
+.i__react {
+  background-image: url("../../icons/langs-pic/icons8_react_90px.png");
+}
+
+.i__react-native {
+  background-image: url("../../icons/langs-pic/icons8_react_90px.png");
+}
+
+.i__react-native::after {
+  content: "React Native";
+}
+
+.i__react::after {
+  content: "React";
+}
+
+.i__redux {
+  background-image: url("../../icons/langs-pic/icons8_redux_90px.png");
+}
+
+.i__redux::after {
+  content: "Redux";
+}
+
+.i__sass {
+  background-image: url("../../icons/langs-pic/icons8_sass_90px.png");
+}
+
+.i__sass::after {
+  content: "SASS/SCSS";
+}
+
+.i__svelte {
+  background-image: url("../../icons/langs-pic/icons8_svelte_90px.png");
+}
+
+.i__svelte::after {
+  content: "Svelte";
+}
+
+.i__ts {
+  background-image: url("../../icons/langs-pic/icons8_typescript_90px.png");
+}
+
+.i__ts::after {
+  content: "TypeScript";
+}
+
+.i__vue {
+  background-image: url("../../icons/langs-pic/icons8_vue_js_90px.png");
+}
+
+.i__vue::after {
+  content: "Vue.js";
 }
 
 .click-up {

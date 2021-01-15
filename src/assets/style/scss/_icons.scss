@@ -1,20 +1,149 @@
 .ico-hue {
-    fill: #ffff;
+  fill: #ffff;
 }
 .ico {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rotate-90__ico {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .rotate-180__ico {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .rotate-270__ico {
-    transform: rotate(270deg);
+  transform: rotate(270deg);
 }
-.rotate-90__ico, .rotate-270__ico, .rotate-180__ico {
-    transition: .3s;
+.rotate-90__ico,
+.rotate-270__ico,
+.rotate-180__ico {
+  transition: 0.3s;
+}
+.hue-ico {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.i__ai {
+  background-image: url("../../icons/langs-pic/icons8_adobe_illustrator_90px.png");
+  &::after {
+    content: "Illustrator";
+  }
+}
+.i__ps {
+  background-image: url("../../icons/langs-pic/icons8_adobe_photoshop_90px.png");
+  &::after {
+    content: "PhotoShop";
+  }
+}
+.i__xd {
+  background-image: url("../../icons/langs-pic/icons8_adobe_xd_90px.png");
+  &::after {
+    content: "Experience Design";
+  }
+}
+.i__id {
+  background-image: url("../../icons/langs-pic/icons8_adobe_indesign_90px.png");
+  &::after {
+    content: "InDesigne";
+  }
+}
+.i__angular {
+  background-image: url("../../icons/langs-pic/icons8_angularjs_90px.png");
+  &::after {
+    content: "Angular";
+  }
+}
+.i__bootstrap {
+  background-image: url("../../icons/langs-pic/icons8_bootstrap_90px.png");
+  &::after {
+    content: "BootsTrap";
+  }
+}
+.i__css {
+  background-image: url("../../icons/langs-pic/icons8_css3_90px.png");
+  &::after {
+    content: "CSS";
+  }
+}
+.i__html {
+  background-image: url("../../icons/langs-pic/icons8_html_5_90px.png");
+  &::after {
+    content: "HTML";
+  }
+}
+.i__js {
+  background-image: url("../../icons/langs-pic/icons8_javascript_90px.png");
+  &::after {
+    content: "JavaScript";
+  }
+}
+.i__nj {
+  background-image: url("../../icons/langs-pic/icons8_nodejs_90px_1.png");
+  &::after {
+    content: "Node JS";
+  }
+}
+.i__py {
+  background-image: url("../../icons/langs-pic/icons8_python_90px.png");
+  &::after {
+    content: "Python";
+  }
+}
+.i__react {
+  background-image: url("../../icons/langs-pic/icons8_react_90px.png");
+  &-native {
+    background-image: url("../../icons/langs-pic/icons8_react_90px.png");
+    &::after {
+      content: "React Native";
+    }
+  }
+  &::after {
+    content: "React";
+  }
+}
+.i__redux {
+  background-image: url("../../icons/langs-pic/icons8_redux_90px.png");
+  &::after {
+    content: "Redux";
+  }
+}
+.i__sass {
+  background-image: url("../../icons/langs-pic/icons8_sass_90px.png");
+  &::after {
+    content: "SASS/SCSS";
+  }
+}
+.i__svelte {
+  background-image: url("../../icons/langs-pic/icons8_svelte_90px.png");
+  &::after {
+    content: "Svelte";
+  }
+}
+.i__ts {
+  background-image: url("../../icons/langs-pic/icons8_typescript_90px.png");
+  &::after {
+    content: "TypeScript";
+  }
+}
+.i__vue {
+  background-image: url("../../icons/langs-pic/icons8_vue_js_90px.png");
+  &::after {
+    content: "Vue.js";
+  }
 }
