@@ -1,0 +1,49 @@
+.wpt-R-pr-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: 0.5s;
+  transition-delay: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  overflow: hidden;
+  &:hover {
+    top: 0;
+    transition-delay: 0.3s;
+  }
+  &__text {
+    position: relative;
+    height: 320px;
+    top: 0;
+    margin-top: 30px;
+    padding: 60px 20px 0px 30px;
+    overflow-y: auto;
+    transition: 0.3s;
+    p {
+      font-size: 1rem;
+      font-weight: var(--rem-1-light);
+      text-align: justify;
+      margin-bottom: 0;
+    }
+  }
+
+  &__used-lang {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    padding: 0 30px 15px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.3s;
+  }
+}
+.wpt-bs-view:hover + .wpt-R-pr-view {
+  top: 0;
+  transition-delay: 0.3s;
+}

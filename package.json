@@ -21,7 +21,8 @@
         "test-development": "live-server dist",
         "test-production": "live-server",
         "build": "webpack --config webpack.config.js",
-        "dev-server": "webpack serve"
+        "dev-server": "webpack serve",
+        "report": "webpack-bundle-analyzer ./dist/report/stats-log.js"
     },
     "repository": {
         "type": "git",

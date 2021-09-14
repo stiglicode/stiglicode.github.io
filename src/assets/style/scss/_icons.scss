@@ -20,10 +20,11 @@
 .rotate-180__ico {
   transition: 0.3s;
 }
+$ico-size: 40px;
 .hue-ico {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: $ico-size;
+  height: $ico-size;
   margin-left: 1rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,12 +33,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hue-ico-row-ltr {
   &:first-child {
     margin-left: 0;
   }
   &:last-child {
     margin-right: 0;
   }
+}
+.ico-size-2xPlus10 {
+  width: $ico-size * 2 + 10 !important;
+  height: $ico-size * 2 + 10 !important;
 }
 .i__ai {
   background-image: url("../../icons/langs-pic/icons8_adobe_illustrator_90px.png");

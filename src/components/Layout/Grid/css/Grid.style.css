@@ -1,0 +1,29 @@
+.grid-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 0 45px 0 45px;
+  top: 0;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.grid-cont .wp-r-t .wp-preview-cont {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.grid-cont .wp-r-t .wp-preview-cont:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
